@@ -1,0 +1,134 @@
+.orders-page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+.orders-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.orders-subhead {
+    color: var(--gray-600);
+    margin-bottom: 1.5rem;
+}
+
+.orders-tabs {
+    display: flex;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+    margin-bottom: 1.5rem;
+}
+
+.orders-tab {
+    padding: 0.75rem 0;
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    color: var(--gray-500);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+}
+
+.orders-tab.active {
+    color: var(--primary-600);
+    border-bottom-color: var(--primary-600);
+    font-weight: 500;
+}
+
+.orders-skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.orders-skel-card {
+    background: white;
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    animation: pulse 1.5s infinite;
+}
+
+.skel-line {
+    height: 1rem;
+    background: var(--gray-200);
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.5rem;
+}
+
+.w33 {
+    width: 33%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.orders-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+.orders-card:hover {
+    background: var(--gray-50);
+}
+
+.orders-card-number {
+    font-weight: 600;
+    color: var(--primary-600);
+    margin-bottom: 0.25rem;
+}
+
+.orders-card-status {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.orders-card-amount {
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.orders-empty {
+    text-align: center;
+    padding: 2rem;
+}
+
+.orders-empty p {
+    color: var(--gray-500);
+}
+
+.orders-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.page-info {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--gray-700);
+}

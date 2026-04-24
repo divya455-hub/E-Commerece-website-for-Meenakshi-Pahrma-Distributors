@@ -1,0 +1,154 @@
+.admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    z-index: 40;
+    background: linear-gradient(180deg, var(--gray-900) 0%, #0f172a 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.admin-sidebar-profile {
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.admin-sidebar-logo {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, var(--primary-400), var(--primary-600));
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.admin-sidebar-profile h1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.admin-sidebar-profile p {
+    font-size: 0.75rem;
+    color: var(--primary-300);
+}
+
+.admin-sidebar nav {
+    flex: 1;
+    padding: 0.75rem 0.5rem;
+    overflow-y: auto;
+}
+
+.admin-sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.625rem 1rem;
+    margin-bottom: 2px;
+    border-radius: var(--radius-md);
+    color: var(--gray-300);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.admin-sidebar nav a:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.admin-sidebar nav a.active {
+    background: var(--primary-600);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.admin-sidebar nav a .material-icons {
+    font-size: 1.25rem;
+}
+
+.sidebar-badge {
+    margin-left: auto;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 10px;
+    background: #ef4444;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    animation: badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.admin-sidebar-logout {
+    padding: 0.75rem 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-sidebar-logout button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.625rem 1rem;
+    width: 100%;
+    border: none;
+    background: none;
+    color: var(--gray-300);
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.admin-sidebar-logout button:hover {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.admin-sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 35;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .admin-sidebar {
+        transform: translateX(-100%);
+    }
+
+    .admin-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .admin-sidebar-overlay.open {
+        display: block;
+    }
+}
