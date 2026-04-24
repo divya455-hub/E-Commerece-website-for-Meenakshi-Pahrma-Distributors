@@ -1,6 +1,4 @@
 # E-Commerece-website-for-Meenakshi-Pharma-Distributors
-# E-Commerce Website for Meenakshi Pharma Distributors 💊
-
 ## 📌 Project Overview
 This is a full-stack e-commerce website developed for managing pharmaceutical products.  
 It includes both customer and admin functionalities.
