@@ -1,1 +1,1 @@
-# E-Commerece-website-for-Meenakshi-Pahrma-Distributors
+# E-Commerece-website-for-Meenakshi-Pharma-Distributors
